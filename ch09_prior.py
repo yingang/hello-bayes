@@ -6,8 +6,6 @@ import scipy.integrate as integrate
 a = 6
 b = 1
 
-x = np.arange(0.0, 1, 0.05)
-
 y, err = integrate.quad(lambda x: beta.pdf(x, a, b), 0.4, 0.6)
 print(f"Exercise 9.1: {y:.2%}")
 
